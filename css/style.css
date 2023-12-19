@@ -1,0 +1,729 @@
+/* ############/ Google Fonts links /############ */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* ############/ Constants & Roots properity /############ */
+
+:root {
+  --main-tittles: #343434;
+  --text-color: #748182;
+  --section-padding: 6.25rem;
+  --hover-color: #1c1c1c;
+  --form-color: #f4f4f4;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 87px;
+}
+
+body {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.section-padding {
+  padding-block: var(--section-padding);
+}
+
+.ff-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.tittle-color {
+  color: var(--main-tittles);
+}
+
+.text-color {
+  color: var(--text-color);
+}
+
+.form-color {
+  background-color: var(--form-color);
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.fs-12 {
+  font-size: 0.75rem;
+}
+
+.fs-13 {
+  font-size: 0.8125rem;
+}
+
+.fs-14 {
+  font-size: 0.875rem;
+}
+
+.fs-15 {
+  font-size: 0.9375rem;
+}
+
+.fs-18 {
+  font-size: 1.125rem;
+}
+
+.fs-30 {
+  font-size: 1.875rem;
+}
+
+.fs-40 {
+  font-size: 2.5rem;
+}
+
+.fs-50 {
+  font-size: 3.125rem;
+}
+
+.fs-60 {
+  font-size: 3.75rem;
+}
+
+.title h3:after {
+  content: "";
+  width: 100%;
+  height: 50%;
+  background-image: url("../imgs/dots.png");
+  position: absolute;
+  bottom: -0.3125rem;
+  left: 0;
+  z-index: -1;
+}
+
+.letter-space {
+  letter-spacing: 0.125rem;
+}
+
+.word-space {
+  word-spacing: 0.125rem;
+}
+
+.max-w-800 {
+  max-width: 800px;
+}
+
+/* =================/ start Navbar /================= */
+nav {
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.875rem !important;
+  background-color: rgba(0, 0, 0, 0.178) !important;
+}
+
+nav a {
+  color: #fff !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar .navbar-nav .nav-link.active {
+  position: relative;
+}
+
+.navbar .navbar-nav .nav-link.active:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.125rem;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+/* =================/ start landing /================= */
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../imgs/bg.jpg") center center / cover no-repeat;
+  color: #fff;
+}
+
+header h1::after {
+  content: "";
+  font-weight: bolder;
+  animation: typing 9s linear infinite;
+}
+
+header ul li a {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes typing {
+  0% {
+    content: "";
+  }
+  0.4444444444444445% {
+    content: "L";
+  }
+  0.888888888888889% {
+    content: "La";
+  }
+  1.3333333333333335% {
+    content: "Lar";
+  }
+  1.777777777777778% {
+    content: "Larr";
+  }
+  2.2222222222222223% {
+    content: "Larry";
+  }
+  2.666666666666667% {
+    content: "Larry ";
+  }
+  3.111111111111111% {
+    content: "Larry D";
+  }
+  3.555555555555556% {
+    content: "Larry Da";
+  }
+  4% {
+    content: "Larry Dan";
+  }
+  4.444444444444445% {
+    content: "Larry Dani";
+  }
+  4.888888888888889% {
+    content: "Larry Danie";
+  }
+  5.333333333333334% {
+    content: "Larry Daniel";
+  }
+  5.777777777777779% {
+    content: "Larry Daniels";
+  }
+  6.222222222222222% {
+    content: "Larry Daniels ";
+  }
+  6.666666666666667% {
+    content: "Larry Daniels |";
+  }
+  26.222222222222225% {
+    content: "Larry Daniels |";
+  }
+  26.666666666666668% {
+    content: "Larry Daniels ";
+  }
+  27.111111111111114% {
+    content: "Larry Daniels";
+  }
+  27.555555555555557% {
+    content: "Larry Daniel";
+  }
+  28% {
+    content: "Larry Danie";
+  }
+  28.444444444444446% {
+    content: "Larry Dani";
+  }
+  28.888888888888893% {
+    content: "Larry Dan";
+  }
+  29.333333333333336% {
+    content: "Larry Da";
+  }
+  29.77777777777778% {
+    content: "Larry D";
+  }
+  30.222222222222225% {
+    content: "Larry ";
+  }
+  30.666666666666668% {
+    content: "Larry";
+  }
+  31.111111111111114% {
+    content: "Larr";
+  }
+  31.555555555555557% {
+    content: "Lar";
+  }
+  32% {
+    content: "La";
+  }
+  32.44444444444445% {
+    content: "L";
+  }
+  33.333333333333336% {
+    content: "";
+  }
+  33.939393939393945% {
+    content: "D";
+  }
+  34.54545454545455% {
+    content: "De";
+  }
+  35.151515151515156% {
+    content: "Dev";
+  }
+  35.75757575757576% {
+    content: "Deve";
+  }
+  36.36363636363637% {
+    content: "Devel";
+  }
+  36.96969696969697% {
+    content: "Develo";
+  }
+  37.57575757575758% {
+    content: "Develop";
+  }
+  38.18181818181819% {
+    content: "Develope";
+  }
+  38.78787878787879% {
+    content: "Developer";
+  }
+  39.3939393939394% {
+    content: "Developer ";
+  }
+  40% {
+    content: "Developer |";
+  }
+  59.3939393939394% {
+    content: "Developer |";
+  }
+  60.00000000000001% {
+    content: "Developer ";
+  }
+  60.60606060606061% {
+    content: "Developer";
+  }
+  61.21212121212122% {
+    content: "Develope";
+  }
+  61.81818181818182% {
+    content: "Develop";
+  }
+  62.42424242424243% {
+    content: "Develo";
+  }
+  63.03030303030303% {
+    content: "Devel";
+  }
+  63.63636363636364% {
+    content: "Deve";
+  }
+  64.24242424242425% {
+    content: "Dev";
+  }
+  64.84848484848486% {
+    content: "De";
+  }
+  65.45454545454545% {
+    content: "D";
+  }
+  66.66666666666667% {
+    content: "";
+  }
+  67.33333333333334% {
+    content: "D";
+  }
+  68% {
+    content: "De";
+  }
+  68.66666666666667% {
+    content: "Des";
+  }
+  69.33333333333334% {
+    content: "Desi";
+  }
+  70% {
+    content: "Desig";
+  }
+  70.66666666666667% {
+    content: "Design";
+  }
+  71.33333333333334% {
+    content: "Designe";
+  }
+  72% {
+    content: "Designer";
+  }
+  72.66666666666667% {
+    content: "Designer ";
+  }
+  73.33333333333334% {
+    content: "Designer |";
+  }
+  92.66666666666667% {
+    content: "Designer |";
+  }
+  93.33333333333333% {
+    content: "Designer ";
+  }
+  94% {
+    content: "Designer";
+  }
+  94.66666666666667% {
+    content: "Designe";
+  }
+  95.33333333333333% {
+    content: "Design";
+  }
+  96% {
+    content: "Desig";
+  }
+  96.66666666666667% {
+    content: "Desi";
+  }
+  97.33333333333333% {
+    content: "Des";
+  }
+  98% {
+    content: "De";
+  }
+  98.66666666666667% {
+    content: "D";
+  }
+  100% {
+    content: "";
+  }
+}
+
+/* =================/ start About Section /================= */
+
+#about .pic {
+  position: relative;
+  z-index: 1;
+}
+
+#about .pic::after {
+  content: "";
+  width: 90%;
+  height: 80%;
+  background-image: url("../imgs/dots.png");
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#about .progress {
+  height: 1.5625rem !important;
+  box-shadow: 0rem 0rem 0.625rem rgba(0, 0, 0, 0.089) inset;
+}
+.progress-bar-anim-95 {
+  animation: progressBar95 3s;
+}
+
+@keyframes progressBar95 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 95%;
+  }
+}
+
+.progress-bar-anim-80 {
+  animation: progressBar-80 3s;
+}
+@keyframes progressBar-80 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.progress-bar-anim-90 {
+  animation: progressBar-90 3s;
+}
+@keyframes progressBar-90 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+#about .btns .btn1 {
+  background-color: var(--hover-color);
+  color: white;
+  padding: 0.625rem 1.875rem;
+  transition: all 0.5s;
+  border: 0.0625rem solid var(--hover-color);
+  font-size: 0.8125rem;
+}
+
+#about .btns .btn1:hover {
+  background-color: #fff;
+  color: var(--hover-color);
+}
+
+#about .btns .btn2 {
+  color: var(--hover-color);
+  padding: 0.625rem 1.875rem;
+  transition: all 0.5s;
+  border: 0.0625rem solid var(--hover-color);
+  font-size: 0.8125rem;
+}
+
+#about .btns .btn2:hover {
+  background-color: var(--hover-color);
+  color: white;
+}
+
+/* =================/ start Services Section /================= */
+#services .card span {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  margin-bottom: 1.25rem;
+  color: var(--main-tittles);
+  transition: all 0.5s;
+  font-size: 1.875rem;
+}
+
+#services .card:hover span {
+  background-color: var(--hover-color);
+  color: white;
+}
+
+/* =================/ start works Section /================= */
+#works ul button {
+  font-weight: 700;
+  color: #222222;
+}
+
+#works ul button.active {
+  position: relative;
+  padding-bottom: 0.3125rem;
+}
+
+#works ul button.active:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.125rem;
+  background-color: #222222;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+#works .layer {
+  position: absolute;
+  background-color: white;
+  top: 0.625rem;
+  left: 0.625rem;
+  bottom: 0.625rem;
+  right: 0.625rem;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+#works .layer h6 {
+  margin-bottom: 3.125rem;
+  transition: all 0.5s;
+}
+
+#works .item:hover .layer {
+  opacity: 1;
+}
+
+#works .item:hover .layer h6 {
+  margin-bottom: 0.625rem;
+}
+
+#works .item .layer .icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.875rem;
+  height: 1.875rem;
+  background-color: #111;
+  border-radius: 50%;
+  font-size: 0.875rem;
+  color: #fff;
+  border: 0.0625rem solid #111;
+  transition: all 0.5s;
+}
+
+#works .item .layer .icons a:hover {
+  background-color: #fff;
+  color: #111;
+}
+
+/* =================/ start Clients Section /================= */
+#clients img {
+  width: 8% !important;
+}
+
+#clients .carousel-indicators button {
+  background-color: #d6d6d6 !important;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+}
+
+#clients .carousel-indicators button.active {
+  background-color: #869791 !important;
+}
+
+/* =================/ start Team Section /================= */
+#team img {
+  transition: all 0.5s;
+}
+
+#team .card .fig-pic:hover img {
+  transform: scale(1.2);
+}
+
+#team .card .layer {
+  position: absolute;
+  top: 4.375rem;
+  left: 4.375rem;
+  bottom: 4.375rem;
+  right: 4.375rem;
+  background: #ffffffee;
+  opacity: 0;
+  transition: all 0.5s;
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+#team .card:hover .layer {
+  opacity: 1;
+  transform: rotateY(360deg);
+  top: 0.3125rem;
+  left: 0.3125rem;
+  bottom: 0.3125rem;
+  right: 0.3125rem;
+}
+
+#team .card .layer ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: #000000;
+  color: #fff;
+  font-size: 1.25rem;
+  border: 0.0625rem solid #000;
+}
+
+#team .card .layer ul li a:hover {
+  background: #fff;
+  color: #000;
+}
+
+#team figcaption {
+  background-color: #5b5b5b;
+}
+
+/* =================/ start Contact Section /================= */
+#contact .content span {
+  width: 3.75rem;
+  height: 3.75rem;
+  color: var(--hover-color);
+  background-color: #f4f4f4;
+  font-size: 1.5625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 1.25rem;
+  transition: all 0.5s;
+}
+
+#contact .content:hover span {
+  color: #f4f4f4;
+  background-color: var(--hover-color);
+}
+
+#contact form textarea {
+  max-height: 300px;
+  min-height: 150px;
+}
+#contact .form-control:focus {
+  box-shadow: none;
+  background-color: var(--form-color);
+}
+
+#contact form button {
+  background-color: var(--hover-color);
+  color: #fff;
+  padding: 0.625rem 2.5rem;
+  font-size: 0.8125rem;
+  border: 0.0625rem solid var(--hover-color);
+}
+
+#contact form button:hover {
+  background-color: #fff;
+  color: var(--hover-color);
+}
+
+/* =================/ start Footer /================= */
+footer {
+  background-color: var(--hover-color);
+  color: #748182;
+  font-size: 0.8125rem;
+  padding-block: 1.5625rem;
+  text-align: center;
+}
+
+/* ############/ Start Media Query /############  */
+
+@media screen and (max-width: 767.9808px) {
+  nav ul {
+    background-color: #fff !important;
+    margin-inline: 0;
+  }
+  nav ul a {
+    color: #000 !important;
+  }
+  header h1 {
+    font-size: 1.875rem !important;
+  }
+  #clients .text-caption {
+    width: 90% !important;
+  }
+}
